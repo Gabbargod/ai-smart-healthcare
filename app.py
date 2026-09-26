@@ -4,8 +4,8 @@ import pandas as pd
 import streamlit as st
 
 ROOT = Path(__file__).resolve().parents[1]
-MODEL_PATH = ROOT / "models" / "final_model_bundle.joblib"
-
+MODEL_PATH = ROOT / "models" / "final_healthcare_model.joblib"
+METADATA_PATH = ROOT / "models" / "final_model_metadata.joblib"
 st.set_page_config(page_title="AI Smart Healthcare", page_icon="🩺", layout="wide")
 st.title("🩺 AI in Smart Healthcare for Early Diagnosis")
 st.caption("Explainable, calibration-aware research prototype")
