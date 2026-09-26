@@ -46,8 +46,8 @@ for feature in features:
     if feature == "age":
         inputs[feature] = st.number_input(
             label,
-            min_value=1,
-            max_value=120,
+            min_value=16,
+            max_value=90,
             value=40,
             step=1
         )
