@@ -51,6 +51,14 @@ for feature in features:
             value=40,
             step=1
         )
+
+    elif feature == "gender":
+        inputs[feature] = st.selectbox(
+            label,
+            ["Male", "Female"],
+            key=feature
+        )
+
     else:
         inputs[feature] = st.selectbox(
             label,
