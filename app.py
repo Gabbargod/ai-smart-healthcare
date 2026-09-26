@@ -17,9 +17,9 @@ if not MODEL_PATH.exists():
     st.error("Model not found. Run: python -m src.train")
     st.stop()
 
-bundle = joblib.load(MODEL_PATH)
-model = bundle["model"]
-features = bundle["raw_feature_names"]
+model = joblib.load(MODEL_PATH)
+metadata = joblib.load(METADATA_PATH)
+features = metadata["features"]
 
 st.subheader("Questionnaire / patient information")
 inputs = {}
